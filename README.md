@@ -24,6 +24,26 @@ curl -X GET \
 
 curl -X POST \
   http://localhost:8080/products/ \
+  -H 'accept: application/json' \
+  -u 'myRetailUser:myRetailUser' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{"id":13860421,"current_price":{"value":13.49,"currency_code":"RS"}}'
+  
+  3. To update a product
+  
+  curl -X PUT \
+  http://localhost:8080/products/13860421 \
+  -H 'accept: application/json' \
+  -u 'myRetailUser:myRetailUser' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{"id":13860421,"current_price":{"value":13.49,"currency_code":"RS"}}'
+  
+  4. To remove a product
+  
+  curl -X DELETE \
+  http://localhost:8080/products/13860428 \
   -u 'myRetailUser:myRetailUser' \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
