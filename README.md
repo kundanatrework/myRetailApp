@@ -11,7 +11,7 @@ This application is developed in Java and Spring boot 2.
 4. Above shall run Spring boot APP at 8080 port, make sure this port is not occupied.
 
 
-<b>What APIs contains</b>
+<b>It does below operations with sample curl</b>
 1. To get all products
 
 curl -X GET \
